@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="index.js"></script>
+    <title>Hoang sang shop</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/antd/4.16.13/antd.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <script>
+         function loadHTML(elementId, filePath) {
+            fetch(filePath)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                })
+                .catch(error => console.error('Error loading the file:', error));
+        }
+
+        loadHTML('bodytrang', 'body.html');
+    </script>
+    <header>
+        <div class="firstcontainer">
+            <div class="location"><i class="fa-solid fa-location-dot"></i>
+            <a href=""> Hệ thống cửa hàng</a>
+            </div>
+
+            <div class="login">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <p>Đăng nhập</p>
+            </div>
+            <div class="regist">
+                <i class="fa-regular fa-user"></i>
+                <p>Đăng kí</p>
+            </div>
+        </div>
+        <div class="secondcontainer">
+        <div class="timkiem">
+            <input placeholder="Tìm kiếm..."></input>
+            <div class="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <div class="logo-container">
+            <h1 class="logo"> Hoang Sang shop</h1>
+        </div>
+        <div class="thehotro">
+            <i class="fa-solid fa-phone-volume"></i>
+            <div class="sdt">
+                <h2>Hỗ trợ & tư vấn</h2>
+                <h1>0368231104</h1>
+        </div>
+        </div>
+        </div>
+    </header>
+
+    <div id="bodytrang">
+    </div>
+
+
+    <footer >
+
+        <div class="container-about">
+            <h2><b>Về chúng tôi</b></h2>
+            <b>HoangSang shop- shop sextoy so 1 viet nam</b>
+            <ul>
+            <li><b>Địa chỉ</b>: chùa lồn</li>
+            <li><b>SDT</b>: 02931293192932</li>
+            <li><b>Email</b>: chósang@gmail.com</li>
+            </ul>
+    
+        </div>
+        <div class="footer-wiget">
+        <h6> Cửa hàng</h6>
+        <ul>
+            <li>
+                <a href="">Liên hệ</a>
+            </li>
+            <li>
+                <a href="">Thông tin về chúng tôi</a>
+            </li>
+            <li>
+                <a href="">Sản phẩm kinh doanh</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="">Thông tin tài khoản</a>
+            </li>
+            <li>
+                <a href="">Giỏ hàng</a>
+            </li>
+            <li>
+                <a href="">Sản phẩm ưa thích</a>
+            </li>
+        </ul>
+        </div>
+        </div>
+    <div class="footer-cuoi">
+        <div class="footer_discount">
+        <h6>Khuyễn mãi & ưu đãi</h6>
+        <p>Đăng kí nhận thông tin tại đây</p>
+        <form action="#">
+            <div class="input_group">
+                <input type="text" placeholder="Nhập email"/>
+                <button class="button_submit" onClick="">Đăng ký</button>
+            </div>
+            
+            <div class="logo_contact_footer">
+                <div><i href="" class="fa-brands fa-facebook"></i></div>
+                <div>
+                    <i href="" class="fa-solid fa-phone">
+                </i>
+            </div>
+            </div>
+        </form>
+    </div>
+    </div>
+    </footer>
+</body>
+</html>

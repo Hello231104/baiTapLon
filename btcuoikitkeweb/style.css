@@ -1,0 +1,227 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header .firstcontainer{
+    height: 40px;
+    background-color: lightgray;
+    display: flex;
+}
+
+header .firstcontainer .login{
+    
+    margin-left: 35%;
+    gap:5px;
+    display: flex;
+    padding-top: 10px;
+}
+
+
+header .firstcontainer .regist{
+    margin-left: 15px;
+    gap:5px;
+    display: flex;
+    padding-top: 10px;
+}
+
+
+header .firstcontainer i {
+    font-size: 20px;
+}
+
+header .firstcontainer .location{
+    text-align: center;
+    width: 40%;
+    padding-top: 10px;
+}
+
+header .secondcontainer{
+    background-color: white;
+   display: flex;
+}
+header .thehotro i{
+    transform:rotate(-45deg);
+}
+
+header .thehotro{
+    margin-left: 15px;
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+header .sdt :hover{
+    
+    cursor: pointer;
+    color: aqua;
+}
+header .thehotro i{
+margin-top: 10px ;
+margin-left:15px;
+font-size: 60px;
+
+}
+
+.logo-container{
+    width: 25%;
+   background-color: pink;
+}
+
+.logo{
+    /*width: 400px;*/
+    padding-top: 30px;
+    text-align: center;
+    height: 100px;
+    background-color: pink;
+    font-family: sans-serif;
+}
+
+header .timkiem{
+    display: flex;
+    align-items: center;
+    width: 500px;
+    padding: 30px;  
+   
+}
+
+header .timkiem .searchbtn {
+    background-color:aqua; /* Màu hồng cho nút */
+    padding: 10px;
+    /*border-radius: 50%; /* Tạo nút tròn */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+header .timkiem .searchbtn i{
+    font-size: 20px;
+    color: black;
+}
+
+header .timkiem .searchbtn :hover{
+    color: blue;
+}
+
+header .timkiem input{
+    border:aqua solid 1px ;
+    width: 400px;
+    height: 40px;
+    font-size: 20px;
+}
+
+
+/* Style cho nút tài khoản */
+
+
+/* Hiệu ứng hover cho nút giỏ hàng */
+.cartbtn:hover {
+    background-color: purple; /* Thay đổi màu khi hover */
+}
+
+/* Hiệu ứng hover cho nút tài khoản */
+.accbtn:hover {
+    background-color: purple; /* Thay đổi màu khi hover */
+}
+
+header ul li{
+list-style: none;
+}
+
+
+
+
+footer{
+
+    display: flex;
+    background-color: lightgray;
+}
+
+
+footer .container-about{
+    width: 30%;
+    font-family: sans-serif;
+    font-weight: 700;
+    list-style: none;
+    padding: 10px;
+}
+
+footer .container-about h2{
+    font-size: 20px;
+}
+
+footer .container-about ul{
+    list-style: none;
+    padding-left: 2px;
+}
+
+footer .footer-wiget{
+    width: 40%;
+    padding: 10px;
+    /*overflow: hidden;*/
+    margin-bottom: 30px;
+    margin-top: 7px;
+    margin-left: 50px;
+}
+
+footer .footer-wiget h6{
+    font-size: 20px;
+}
+
+footer .footer-wiget ul{
+    float: left;
+    width: 50%;
+}
+
+footer .footer-wiget ul li {
+    list-style: none;
+}
+
+footer .footer-wiget ul li a{
+    color: black !important;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+
+footer .footer-cuoi{
+    padding: 10px;
+    padding-left: 20px;
+    width: 30%;
+
+}
+
+footer .footer-cuoi .footer_discount{
+    padding-left: 10px;
+}
+
+footer .footer-cuoi .footer_discount h6 {
+
+    font-size: 20px;
+}
+footer .footer-cuoi .footer_discount p{
+    font-size:  14px;
+}
+
+footer .footer-cuoi .footer_discount .input_group input{
+}
+
+footer .footer-cuoi .footer_discount .input_group .button_submit{
+       
+    cursor: pointer;
+}
+
+footer .footer-cuoi .footer_discount .logo_contact_footer{
+    /*color: pink;*/
+    display: flex;
+    font-size: 30px;
+    gap: 20px;
+} 
+
+footer .footer-cuoi .footer_discount .logo_contact_footer
+ i{
+    cursor: pointer;
+ }
+

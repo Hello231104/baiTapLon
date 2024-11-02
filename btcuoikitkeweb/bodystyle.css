@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    
+    justify-content: center;
+    display: flex;
+    background-color:lightblue;
+    
+}
+
+
+
+.nav-links {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    display: flex;
+}
+
+.nav-links ul{
+    width: 100%;
+
+}
+
+.nav-links li {
+    width: 20%;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    /*margin-left: 20px;*/
+}
+
+.nav-links a {
+    text-decoration: none;
+    color:black;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff5733;
+}
+
+.content {
+    padding: 20px;
+}
+
+
+.carousel {
+    position: relative;
+    max-width: 100%; 
+    overflow: hidden; 
+}
+
+.carousel-images {
+    display: flex; 
+    transition: transform 0.5s ease; /* Hiệu ứng */
+}
+
+.carousel-image {
+    min-width: 100%; 
+    display: none; 
+}
+
+.carousel-image.active {
+    display: block; 
+}
+
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev {
+    left: 10px; 
+}
+
+.next {
+    right: 10px; 
+}
