@@ -31,3 +31,31 @@ setInterval(() => {
 
 // bat dau hien thi slide dung de nhet vao html
 showSlide(currentSlide);
+
+
+
+//hieu ung lat hop
+function toggleFlip(card) {
+    card.classList.toggle("flip");
+}
+
+
+//nut back to top
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
+
+//danh muc san pham
+function showCategory(category) {
+    const allProducts = document.querySelectorAll('.product-card');
+    allProducts.forEach(product => product.classList.add('hidden'));
+
+    const selectedProducts = document.querySelectorAll(`.${category}`);
+    selectedProducts.forEach(product => product.classList.remove('hidden'));
+}
+
+

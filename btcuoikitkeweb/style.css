@@ -5,6 +5,7 @@
 }
 
 header .firstcontainer{
+    max-width: 100%;
     height: 40px;
     background-color: lightgray;
     display: flex;
@@ -38,6 +39,7 @@ header .firstcontainer .location{
 }
 
 header .secondcontainer{
+    max-width: 100%;
     background-color: white;
    display: flex;
 }
@@ -46,10 +48,15 @@ header .thehotro i{
 }
 
 header .thehotro{
+    width: 25%;
     margin-left: 15px;
     margin-top: 25px;
     display: flex;
     gap: 15px;
+}
+
+header .sdt{
+    max-width: 40%;
 }
 
 header .sdt :hover{
@@ -79,9 +86,9 @@ font-size: 60px;
 }
 
 header .timkiem{
+    width: 40%;
     display: flex;
     align-items: center;
-    width: 500px;
     padding: 30px;  
    
 }
@@ -107,7 +114,7 @@ header .timkiem .searchbtn :hover{
 
 header .timkiem input{
     border:aqua solid 1px ;
-    width: 400px;
+    width: 80%;
     height: 40px;
     font-size: 20px;
 }
@@ -206,6 +213,7 @@ footer .footer-cuoi .footer_discount p{
 }
 
 footer .footer-cuoi .footer_discount .input_group input{
+    width: 50%;
 }
 
 footer .footer-cuoi .footer_discount .input_group .button_submit{
@@ -225,3 +233,5 @@ footer .footer-cuoi .footer_discount .logo_contact_footer
     cursor: pointer;
  }
 
+
+ 
