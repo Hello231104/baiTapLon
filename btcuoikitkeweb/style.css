@@ -39,6 +39,7 @@ header .firstcontainer .location{
 }
 
 header .secondcontainer{
+    height:100px;
     max-width: 100%;
     background-color: white;
    display: flex;
@@ -50,7 +51,6 @@ header .thehotro i{
 header .thehotro{
     width: 25%;
     margin-left: 15px;
-    margin-top: 25px;
     display: flex;
     gap: 15px;
 }
@@ -72,7 +72,7 @@ font-size: 60px;
 }
 
 .logo-container{
-    width: 25%;
+    width: 20%;
    background-color: pink;
 }
 
@@ -81,7 +81,7 @@ font-size: 60px;
     padding-top: 30px;
     text-align: center;
     height: 100px;
-    background-color: pink;
+    background-color: lightblue;
     font-family: sans-serif;
 }
 
@@ -94,7 +94,7 @@ header .timkiem{
 }
 
 header .timkiem .searchbtn {
-    background-color:aqua; /* Màu hồng cho nút */
+    background-color:lightblue; /* Màu hồng cho nút */
     padding: 10px;
     /*border-radius: 50%; /* Tạo nút tròn */
     display: flex;
@@ -141,7 +141,7 @@ list-style: none;
 
 
 footer{
-
+    height:175px;
     display: flex;
     background-color: lightgray;
 }
@@ -149,8 +149,6 @@ footer{
 
 footer .container-about{
     width: 30%;
-    font-family: sans-serif;
-    font-weight: 700;
     list-style: none;
     padding: 10px;
 }
@@ -187,7 +185,7 @@ footer .footer-wiget ul li {
 }
 
 footer .footer-wiget ul li a{
-    color: black !important;
+    color: black ;
     font-size: 16px;
     line-height: 32px;
 }
