@@ -10,46 +10,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.navbar {
-    height: 50px;
-    justify-content: center;
-    display: flex;
-    background-color:lightblue;
-}
 
-
-
-.nav-links {
-    width: 100%;
-    justify-content: center;
-    text-align: center;
-    list-style: none;
-    display: flex;
-
-}
-
-.nav-links ul{
-    width: 100%;
-
-}
-
-.nav-links li {
-    width: 20%;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: bolder;
-    /*margin-left: 20px;*/
-}
-
-.nav-links a {
-    text-decoration: none;
-    color:black;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #ff5733;
-}
 
 .content {
     padding: 20px;
@@ -57,9 +18,14 @@ body {
 
 
 .carousel {
+    border-radius:10px;
+    margin-left:1%;
+    margin-right:1%;
     position: relative;
-    max-width: 100%; 
+    max-width: 98%; 
     overflow: hidden; 
+    align-items:center;
+
 }
 
 .carousel-images {
@@ -68,7 +34,7 @@ body {
 }
 
 .carousel-image {
-    min-width: 100%; 
+    min-width: 90%; 
     display: none; 
 }
 

@@ -1,4 +1,6 @@
-
+*{
+    font-family:'playfair display'
+}
 *{
     margin: 0;
     padding: 0;
@@ -6,17 +8,18 @@
 
 header .firstcontainer{
     max-width: 100%;
-    height: 40px;
-    background-color: lightgray;
+    height: 30px;
+    background-color:rgb(231,70,132);
+    font-style:BOLD;
     display: flex;
+    padding:5px;
+    justify-content: center;
 }
 
 header .firstcontainer .login{
-    
-    margin-left: 35%;
-    gap:5px;
-    display: flex;
-    padding-top: 10px;
+    font-weight: bold;
+    color:white;
+    font-size:15px;
 }
 
 
@@ -39,11 +42,13 @@ header .firstcontainer .location{
 }
 
 header .secondcontainer{
-    height:100px;
+    height:80px;
     max-width: 100%;
     background-color: white;
-   display: flex;
+    display: flex;
+    flex-wrap: nowrap;
 }
+
 header .thehotro i{
     transform:rotate(-45deg);
 }
@@ -71,43 +76,54 @@ font-size: 60px;
 
 }
 
-.logo-container{
-    width: 20%;
-   background-color: pink;
-}
-
 .logo{
-    /*width: 400px;*/
-    padding-top: 30px;
-    text-align: center;
-    height: 100px;
-    background-color: lightblue;
-    font-family: sans-serif;
+    height:60px;
+    margin:10px;
+    margin-left:30px;
+    margin-right:40px;
 }
 
-header .timkiem{
-    width: 40%;
+
+.navbar {
+    height: 80px;
+    justify-content: left;
     display: flex;
-    align-items: center;
-    padding: 30px;  
-   
+    background-color:white;
 }
 
-header .timkiem .searchbtn {
-    background-color:lightblue; /* Màu hồng cho nút */
-    padding: 10px;
-    /*border-radius: 50%; /* Tạo nút tròn */
+
+
+.nav-links {
+    width: 100%;
+    padding-top:25px;
+    padding-bottom:25px;
+    list-style: none;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+    flex-wrap:wrap;
 }
 
-header .timkiem .searchbtn i{
-    font-size: 20px;
-    color: black;
+.nav-links ul{
+    
+    width: 100%;
+
 }
 
+.nav-links li {
+    padding-right:2%;
+    font-size: 15px;
+    /*font-weight: bolder;*/
+    /*margin-left: 20px;*/
+}
+
+.nav-links a {
+    text-decoration: none;
+    color:black;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff5733;
+}
 header .timkiem .searchbtn :hover{
     color: blue;
 }
