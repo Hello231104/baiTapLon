@@ -86,7 +86,6 @@ font-size: 60px;
 
 .navbar {
     height: 80px;
-    justify-content: left;
     display: flex;
     background-color:white;
 }
@@ -94,14 +93,29 @@ font-size: 60px;
 
 
 .nav-links {
-    width: 100%;
+    width: 75%;
     padding-top:25px;
     padding-bottom:25px;
     list-style: none;
     display: flex;
     flex-wrap:wrap;
+    justify-content: left;
+}
+.nav-icons {
+    width: 25%;
+    align-items: center;
+    list-style: none;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: right;
+    font-size: 30px;
+    margin-right: 2%;
 }
 
+.nav-icons li{
+    margin-top:15px;
+    padding-left: 8%;
+}
 .nav-links ul{
     
     width: 100%;
@@ -109,12 +123,11 @@ font-size: 60px;
 }
 
 .nav-links li {
-    padding-right:2%;
+    padding-right:3%;
     font-size: 15px;
     /*font-weight: bolder;*/
     /*margin-left: 20px;*/
 }
-
 .nav-links a {
     text-decoration: none;
     color:black;
@@ -122,7 +135,7 @@ font-size: 60px;
 }
 
 .nav-links a:hover {
-    color: #ff5733;
+    color: rgb(231,70,132);
 }
 header .timkiem .searchbtn :hover{
     color: blue;
@@ -157,8 +170,6 @@ list-style: none;
 
 
 footer{
-    height:175px;
-    display: flex;
     background-color: lightgray;
 }
 
@@ -241,11 +252,16 @@ footer .footer-cuoi .footer_discount .logo_contact_footer{
     font-size: 30px;
     gap: 20px;
 } 
-
 footer .footer-cuoi .footer_discount .logo_contact_footer
  i{
     cursor: pointer;
  }
+footer .last-footer{
+    height:25px;
+    font-size:14px;
+    text-align: center;
+    background-color: white;
+}
 
 
  
