@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'playfair display ' ;
+    font-family: 'ROBOTO' ;
 }
 
 body {
@@ -232,26 +232,31 @@ body {
 
     overflow: hidden;
     width: 100%;
-    height: 100px;
-    background-color: #f3f3f3;
+    height: 80px;
+    background-color: #FFFFFF;
     display: flex;
     align-items: center;
-    border: 1px solid #ccc;
+    border: 1px solid #000;
 }
 
 .marquee-content{
     display: flex;
-    animation: scroll 8s linear infinite;
+    animation: scroll 10s linear infinite;
 }
 
 .marquee-item{
-    min-width: 200px;
-    margin: 0 10px;
+    
+    margin-top:15px;
+    min-width: 500px;
     text-align: center;
     color:  black;
-    padding: 20px;
-    border-radius: 5px;
-    font-size:25px;
+    font-weight:bold;
+    font-size:60px;
+}
+.marquee-icon{
+    margin-top:12px;
+    heihgt:10px;
+    min-width: 70px;
 }
 
 @keyframes scroll{
