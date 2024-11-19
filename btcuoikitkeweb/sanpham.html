@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="sanpham.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/antd/4.16.13/antd.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="index.js"></script>
+    <script>
+    function loadHTML(elementId, filePath) {
+        fetch(filePath)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById(elementId).innerHTML = data;
+            })
+            .catch(error => console.error('Error loading the file:', error));
+    }
+
+    loadHTML('bodytrang', 'body.html');
+    loadHTML('footertrang','footer.html')
+    loadHTML('headertrang', 'header.html');
+</script>
+</head>
+<body>
+   <header> 
+    <div id="headertrang"></div>
+</header>
+<div>
+    <div class="pricing-container">
+        <div class="pricing-card">
+            <img src="https://via.placeholder.com/500x700" alt="Standard T-Shirt">
+            <div class="content">
+                <h2>Standard T-Shirt</h2>
+                <p class="price">$20.00</p>
+                <p class="description">A classic MrBeast T-shirt. Comfortable and stylish!</p>
+                <button class="btn-buy">Add to Cart</button>
+            </div>
+        </div>
+        </div>
+</div>
+
+
+    <div id="footertrang"></div>
+    
+</body>
+</html>
