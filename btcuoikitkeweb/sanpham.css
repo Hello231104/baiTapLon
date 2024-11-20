@@ -4,9 +4,19 @@
     box-sizing: border-box;
 }
 
+.list{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: grid ;
+    grid-template-columns: auto auto auto auto;
 
+}
 
 .pricing-container {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
     display: flex;
     gap: 30px;
     margin-bottom: 10px;
@@ -102,3 +112,73 @@ h2 {
 .featured .btn-buy:hover {
     background-color: #e06d00;
 }
+
+
+.marquee{
+    margin-bottom: 5px;
+    position: relative;
+
+    overflow: hidden;
+    width: 100%;
+    height: 80px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+
+
+.marquee-content{
+    display: flex;
+    animation: scroll2 8s linear infinite;
+}
+.marquee-content2{
+    display: flex;
+    animation: scroll 8s linear infinite;
+}
+
+.marquee-item{
+    background-color: whitesmoke;
+    margin-top:15px;
+    min-width: 500px;
+    text-align: center;
+    animation: chuyenMau 2s linear infinite;
+    font-weight:bold;
+    font-size:60px;
+}
+.marquee-icon{
+    margin-top:12px;
+    heihgt:10px;
+    min-width: 70px;
+}
+
+
+@keyframes scroll{
+    0%{transform: translateX(0);}
+    100%{transform: translateX(-100%);}
+}
+
+@keyframes scroll2{
+    100%{transform: translateX(0);}
+    0%{transform: translateX(-100%);}
+}
+
+
+@keyframes chuyenMau {
+    0% {
+        color: rgb(255, 0, 0); /* Đỏ */
+      }
+      25% {
+        color: rgb(0, 255, 0); /* Xanh lá */
+      }
+      50% {
+        color: rgb(0, 0, 255); /* Xanh dương */
+      }
+      75% {
+        color: rgb(255, 255, 0); /* Vàng */
+      }
+      100% {
+        color: rgb(255, 0, 255); /* Hồng */
+      }
+  }
