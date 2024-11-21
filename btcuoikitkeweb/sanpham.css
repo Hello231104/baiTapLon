@@ -35,7 +35,7 @@
 }
 
 .pricing-card:hover {
-    transform: translateY(-10px);
+   /* transform: translateY(-10px);*/
 }
 
 /* Ảnh nền */
