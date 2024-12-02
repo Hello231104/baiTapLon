@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+</head>
+<body>
+    <div class="detail-container">
+        <img id="product-image" src="" alt="Product Image">
+        <h2 id="product-name"></h2>
+        <p id="product-price"></p>
+        <p id="product-description"></p>
+    </div>
+
+    <script>
+        // Lấy dữ liệu từ localStorage
+        const detailData = JSON.parse(localStorage.getItem('productDetail'));
+        
+        // Hiển thị dữ liệu trên trang
+        if (detailData) {
+            document.getElementById('product-image').src = detailData.image;
+            document.getElementById('product-name').textContent = detailData.name;
+            document.getElementById('product-price').textContent = detailData.price;
+            document.getElementById('product-description').textContent = detailData.description;
+        }
+    </script>
+</body>
+</html>
