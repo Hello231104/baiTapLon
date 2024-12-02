@@ -228,3 +228,23 @@ h2 {
         color: rgb(255, 0, 255); /* Hồng */
       }
   }
+
+/*nut back to top*/
+  #backToTopBtn {
+    position: fixed;
+    width: 40px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#backToTopBtn:hover {
+    background-color: #555;
+}
