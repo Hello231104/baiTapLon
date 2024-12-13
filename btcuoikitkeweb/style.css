@@ -93,7 +93,7 @@ font-size: 60px;
 
 
 .nav-links {
-    width: 75%;
+    width: 100%;
     padding-top:25px;
     padding-bottom:25px;
     list-style: none;
@@ -101,21 +101,7 @@ font-size: 60px;
     flex-wrap:wrap;
     justify-content: left;
 }
-.nav-icons {
-    width: 25%;
-    align-items: center;
-    list-style: none;
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: right;
-    font-size: 30px;
-    margin-right: 2%;
-}
 
-.nav-icons li{
-    margin-top:15px;
-    padding-left: 8%;
-}
 .nav-links ul{
     
     width: 100%;
@@ -256,11 +242,31 @@ footer .footer-cuoi .footer_discount .logo_contact_footer
  i{
     cursor: pointer;
  }
+footer .upper-footer{
+    
+    border:1px solid black;
+    height:50px;
+    font-size:30px;
+    text-align: center;
+    background-color: white;
+}
 footer .last-footer{
     height:25px;
     font-size:14px;
     text-align: center;
     background-color: white;
+}
+.footer-icons {
+    align-items: center;
+    list-style: none;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.footer-icons li{
+    margin-left: 1%;
+    margin-right:1%;
 }
 
 
