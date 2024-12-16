@@ -1,216 +1,362 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thanh Điều Hướng</title>
-    <script src="index.js"></script>
-</head>
-<body>
+    <!DOCTYPE html>
+    <html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thanh Điều Hướng</title>
+        <script src="index.js"></script>
+        <script src="chitiet.js"></script>
+        <link rel="stylesheet" href="style.css">
     
-    
+    <link rel="stylesheet" href="sanpham.css">
+    </head>
+    <body>
+        
+        
 
 
-    <div class="carousel">
-        <div class="carousel-images">
-            <img src="https://bizweb.dktcdn.net/100/316/286/themes/757383/assets/slider_1.jpg?1687422422836" alt="Image 1" class="carousel-image active">
-            <img src="https://bizweb.dktcdn.net/100/316/286/themes/757383/assets/slider_2.jpg?1687422422836" alt="Image 2" class="carousel-image">
-            <img src="https://bizweb.dktcdn.net/100/316/286/themes/757383/assets/slider_5.jpg?1687422422836" alt="Image 3" class="carousel-image">
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="https://bizweb.dktcdn.net/100/316/286/themes/757383/assets/slider_1.jpg?1687422422836" alt="Image 1" class="carousel-image active">
+                <img src="https://bizweb.dktcdn.net/100/316/286/themes/757383/assets/slider_2.jpg?1687422422836" alt="Image 2" class="carousel-image">
+                <img src="https://bizweb.dktcdn.net/100/316/286/themes/757383/assets/slider_5.jpg?1687422422836" alt="Image 3" class="carousel-image">
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
         </div>
-        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-        <button class="next" onclick="changeSlide(1)">&#10095;</button>
-    </div>
 
 
 
-    
-
-    <h1 class="tieude-sanpham">SẢN PHẨM MỚI VỀ</h1>
-
-    <!-- Thanh Navbar -->
-    <div class="navber-sanpham">
-        <button onclick="showCategory('category1')" class="navsp-button">Sản Phẩm Mới</button>
-        <button onclick="showCategory('category2')" class="navsp-button">Giảm Giá</button>
-        <button onclick="showCategory('category3')" class="navsp-button">Phổ Biến</button>
-    </div>
-
-    <div class="product-container">
-        <!-- Category 1 Products -->
-        <div class="product-card category1">
-            <div class="the-sanpham">
-                <div class="anh-sanpham">
-                    <img src="https://via.placeholder.com/200" alt="Product Image">
-                </div>
-                <div class="thongtin-sanpham">
-                    <h3 class="ten-sanpham">Product Name</h3>
-                    <p class="gia-sanpham">$29.99</p>
-                </div>
+        <div class="marquee">
+            <div class="marquee-content">
+                <div class="marquee-icon"><img src="pictures/fire_icon.png" height="80px"></div>
+                <div class="marquee-item">SẢN PHẨM HOT</div>
+                <div class="marquee-icon"><img src="pictures/fire_icon.png" height="80px"></div>
+                <div class="marquee-item">SẢN PHẨM HOT</div>
+                
+            </div>
+            <div class="marquee-content">
+                <div class="marquee-icon"><img src="pictures/fire_icon.png" height="80px"></div>
+                <div class="marquee-item">SẢN PHẨM HOT</div>
+                <div class="marquee-icon"><img src="pictures/fire_icon.png" height="80px"></div>
+                <div class="marquee-item">SẢN PHẨM HOT</div>
+                
+            </div>
+            <div class="marquee-content">
+                <div class="marquee-icon"><img src="pictures/fire_icon.png" height="80px"></div>
+                <div class="marquee-item">SẢN PHẨM HOT</div>
+                <div class="marquee-icon"><img src="pictures/fire_icon.png" height="80px"></div>
+                <div class="marquee-item">SẢN PHẨM HOT</div>
+                
+            </div>
+            <div class="marquee-content">
+                <div class="marquee-icon"><img src="pictures/fire_icon.png" height="80px"></div>
+                <div class="marquee-item">SẢN PHẨM HOT</div>
+                <div class="marquee-icon"><img src="pictures/fire_icon.png" height="80px"></div>
+                <div class="marquee-item">SẢN PHẨM HOT</div>
+                
             </div>
         </div>
-        <div class="product-card category1">
-            <div class="the-sanpham">
-                <div class="anh-sanpham">
-                    <img src="https://via.placeholder.com/200" alt="Product Image">
+        <div class="list">
+            <div class="pricing-container">
+                <div class="pricing-card"
+                data-name="Standard T-Shirt" 
+                data-price="$20.00" 
+                data-description="A classic MrBeast T-shirt. Comfortable and stylish!" 
+                data-image="https://placehold.co/350x500"
+                onclick="goToDetailPage(this)"
+                >
+                    
+                    <div class="the_che"></div>
+                    <img src="https://placehold.co/350x500" alt="Standard T-Shirt">
+                    <div class="content">
+                        <h2>Standard T-Shirt</h2>
+                        <p class="price">$20.00</p>
+                        <p class="description">A classic MrBeast T-shirt. Comfortable and stylish!</p>
+                        <button class="btn-buy">Add to Cart</button>
+                    </div>
                 </div>
-                <div class="thongtin-sanpham">
-                    <h3 class="ten-sanpham">Product Name</h3>
-                    <p class="gia-sanpham">$29.99</p>
                 </div>
+                <div class="pricing-container">
+                    <div class="pricing-card"
+                    data-name="Standard T-Shirt" 
+                    data-price="$20.00" 
+                    data-description="A classic MrBeast T-shirt. Comfortable and stylish!" 
+                    data-image="https://placehold.co/350x500"
+                    onclick="goToDetailPage(this)"
+                    >
+                        
+                        <div class="the_che"></div>
+                        <img src="https://placehold.co/350x500" alt="Standard T-Shirt">
+                        <div class="content">
+                            <h2>Standard T-Shirt</h2>
+                            <p class="price">$20.00</p>
+                            <p class="description">A classic MrBeast T-shirt. Comfortable and stylish!</p>
+                            <button class="btn-buy">Add to Cart</button>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="pricing-container">
+                        <div class="pricing-card"
+                        data-name="Standard T-Shirt" 
+                        data-price="$20.00" 
+                        data-description="A classic MrBeast T-shirt. Comfortable and stylish!" 
+                        data-image="https://placehold.co/350x500"
+                        onclick="goToDetailPage(this)"
+                        >
+                            
+                            <div class="the_che"></div>
+                            <img src="https://placehold.co/350x500" alt="Standard T-Shirt">
+                            <div class="content">
+                                <h2>Standard T-Shirt</h2>
+                                <p class="price">$20.00</p>
+                                <p class="description">A classic MrBeast T-shirt. Comfortable and stylish!</p>
+                                <button class="btn-buy">Add to Cart</button>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="pricing-container">
+                            <div class="pricing-card"
+                            data-name="Standard T-Shirt" 
+                            data-price="$20.00" 
+                            data-description="A classic MrBeast T-shirt. Comfortable and stylish!" 
+                            data-image="https://placehold.co/350x500"
+                            onclick="goToDetailPage(this)"
+                            >
+                                
+                                <div class="the_che"></div>
+                                <img src="https://placehold.co/350x500" alt="Standard T-Shirt">
+                                <div class="content">
+                                    <h2>Standard T-Shirt</h2>
+                                    <p class="price">$20.00</p>
+                                    <p class="description">A classic MrBeast T-shirt. Comfortable and stylish!</p>
+                                    <button class="btn-buy">Add to Cart</button>
+                                </div>
+                            </div>
+                            </div>
+                            
+        </div>
+        <div class="marquee">
+            <div class="marquee-content">
+                <div class="marquee-icon"><img src="pictures/fire_icon.png" height="80px"></div>
+                <div class="marquee-item">SẢN PHẨM HOT</div>
+                <div class="marquee-icon"><img src="pictures/fire_icon.png" height="80px"></div>
+                <div class="marquee-item">SẢN PHẨM HOT</div>
+                
+            </div>
+            <div class="marquee-content">
+                <div class="marquee-icon"><img src="pictures/fire_icon.png" height="80px"></div>
+                <div class="marquee-item">SẢN PHẨM HOT</div>
+                <div class="marquee-icon"><img src="pictures/fire_icon.png" height="80px"></div>
+                <div class="marquee-item">SẢN PHẨM HOT</div>
+                
+            </div>
+            <div class="marquee-content">
+                <div class="marquee-icon"><img src="pictures/fire_icon.png" height="80px"></div>
+                <div class="marquee-item">SẢN PHẨM HOT</div>
+                <div class="marquee-icon"><img src="pictures/fire_icon.png" height="80px"></div>
+                <div class="marquee-item">SẢN PHẨM HOT</div>
+                
+            </div>
+            <div class="marquee-content">
+                <div class="marquee-icon"><img src="pictures/fire_icon.png" height="80px"></div>
+                <div class="marquee-item">SẢN PHẨM HOT</div>
+                <div class="marquee-icon"><img src="pictures/fire_icon.png" height="80px"></div>
+                <div class="marquee-item">SẢN PHẨM HOT</div>
+                
             </div>
         </div>
-        <div class="product-card category1">
-            <div class="the-sanpham">
-                <div class="anh-sanpham">
-                    <img src="https://via.placeholder.com/200" alt="Product Image">
+        <div class="list">
+            <div class="pricing-container">
+                <div class="pricing-card"
+                data-name="Standard T-Shirt" 
+                data-price="$20.00" 
+                data-description="A classic MrBeast T-shirt. Comfortable and stylish!" 
+                data-image="https://placehold.co/350x500"
+                onclick="goToDetailPage(this)"
+                >
+                    
+                    <div class="the_che"></div>
+                    <img src="https://placehold.co/350x500" alt="Standard T-Shirt">
+                    <div class="content">
+                        <h2>Standard T-Shirt</h2>
+                        <p class="price">$20.00</p>
+                        <p class="description">A classic MrBeast T-shirt. Comfortable and stylish!</p>
+                        <button class="btn-buy">Add to Cart</button>
+                    </div>
                 </div>
-                <div class="thongtin-sanpham">
-                    <h3 class="ten-sanpham">Product Name</h3>
-                    <p class="gia-sanpham">$29.99</p>
                 </div>
+                <div class="pricing-container">
+                    <div class="pricing-card"
+                    data-name="Standard T-Shirt" 
+                    data-price="$20.00" 
+                    data-description="A classic MrBeast T-shirt. Comfortable and stylish!" 
+                    data-image="https://placehold.co/350x500"
+                    onclick="goToDetailPage(this)"
+                    >
+                        
+                        <div class="the_che"></div>
+                        <img src="https://placehold.co/350x500" alt="Standard T-Shirt">
+                        <div class="content">
+                            <h2>Standard T-Shirt</h2>
+                            <p class="price">$20.00</p>
+                            <p class="description">A classic MrBeast T-shirt. Comfortable and stylish!</p>
+                            <button class="btn-buy">Add to Cart</button>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="pricing-container">
+                        <div class="pricing-card"
+                        data-name="Standard T-Shirt" 
+                        data-price="$20.00" 
+                        data-description="A classic MrBeast T-shirt. Comfortable and stylish!" 
+                        data-image="https://placehold.co/350x500"
+                        onclick="goToDetailPage(this)"
+                        >
+                            
+                            <div class="the_che"></div>
+                            <img src="https://placehold.co/350x500" alt="Standard T-Shirt">
+                            <div class="content">
+                                <h2>Standard T-Shirt</h2>
+                                <p class="price">$20.00</p>
+                                <p class="description">A classic MrBeast T-shirt. Comfortable and stylish!</p>
+                                <button class="btn-buy">Add to Cart</button>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="pricing-container">
+                            <div class="pricing-card"
+                            data-name="Standard T-Shirt" 
+                            data-price="$20.00" 
+                            data-description="A classic MrBeast T-shirt. Comfortable and stylish!" 
+                            data-image="https://placehold.co/350x500"
+                            onclick="goToDetailPage(this)"
+                            >
+                                
+                                <div class="the_che"></div>
+                                <img src="https://placehold.co/350x500" alt="Standard T-Shirt">
+                                <div class="content">
+                                    <h2>Standard T-Shirt</h2>
+                                    <p class="price">$20.00</p>
+                                    <p class="description">A classic MrBeast T-shirt. Comfortable and stylish!</p>
+                                    <button class="btn-buy">Add to Cart</button>
+                                </div>
+                            </div>
+                            </div>
+                            
+        </div>        <div class="marquee">
+            <div class="marquee-content">
+                <div class="marquee-icon"><img src="pictures/fire_icon.png" height="80px"></div>
+                <div class="marquee-item">SẢN PHẨM HOT</div>
+                <div class="marquee-icon"><img src="pictures/fire_icon.png" height="80px"></div>
+                <div class="marquee-item">SẢN PHẨM HOT</div>
+                
+            </div>
+            <div class="marquee-content">
+                <div class="marquee-icon"><img src="pictures/fire_icon.png" height="80px"></div>
+                <div class="marquee-item">SẢN PHẨM HOT</div>
+                <div class="marquee-icon"><img src="pictures/fire_icon.png" height="80px"></div>
+                <div class="marquee-item">SẢN PHẨM HOT</div>
+                
+            </div>
+            <div class="marquee-content">
+                <div class="marquee-icon"><img src="pictures/fire_icon.png" height="80px"></div>
+                <div class="marquee-item">SẢN PHẨM HOT</div>
+                <div class="marquee-icon"><img src="pictures/fire_icon.png" height="80px"></div>
+                <div class="marquee-item">SẢN PHẨM HOT</div>
+                
+            </div>
+            <div class="marquee-content">
+                <div class="marquee-icon"><img src="pictures/fire_icon.png" height="80px"></div>
+                <div class="marquee-item">SẢN PHẨM HOT</div>
+                <div class="marquee-icon"><img src="pictures/fire_icon.png" height="80px"></div>
+                <div class="marquee-item">SẢN PHẨM HOT</div>
+                
             </div>
         </div>
-        <div class="product-card category1">
-            <div class="the-sanpham">
-                <div class="anh-sanpham">
-                    <img src="https://via.placeholder.com/200" alt="Product Image">
+        <div class="list">
+            <div class="pricing-container">
+                <div class="pricing-card"
+                data-name="Standard T-Shirt" 
+                data-price="$20.00" 
+                data-description="A classic MrBeast T-shirt. Comfortable and stylish!" 
+                data-image="https://placehold.co/350x500"
+                onclick="goToDetailPage(this)"
+                >
+                    
+                    <div class="the_che"></div>
+                    <img src="https://placehold.co/350x500" alt="Standard T-Shirt">
+                    <div class="content">
+                        <h2>Standard T-Shirt</h2>
+                        <p class="price">$20.00</p>
+                        <p class="description">A classic MrBeast T-shirt. Comfortable and stylish!</p>
+                        <button class="btn-buy">Add to Cart</button>
+                    </div>
                 </div>
-                <div class="thongtin-sanpham">
-                    <h3 class="ten-sanpham">Product Name</h3>
-                    <p class="gia-sanpham">$29.99</p>
                 </div>
-            </div>
+                <div class="pricing-container">
+                    <div class="pricing-card"
+                    data-name="Standard T-Shirt" 
+                    data-price="$20.00" 
+                    data-description="A classic MrBeast T-shirt. Comfortable and stylish!" 
+                    data-image="https://placehold.co/350x500"
+                    onclick="goToDetailPage(this)"
+                    >
+                        
+                        <div class="the_che"></div>
+                        <img src="https://placehold.co/350x500" alt="Standard T-Shirt">
+                        <div class="content">
+                            <h2>Standard T-Shirt</h2>
+                            <p class="price">$20.00</p>
+                            <p class="description">A classic MrBeast T-shirt. Comfortable and stylish!</p>
+                            <button class="btn-buy">Add to Cart</button>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="pricing-container">
+                        <div class="pricing-card"
+                        data-name="Standard T-Shirt" 
+                        data-price="$20.00" 
+                        data-description="A classic MrBeast T-shirt. Comfortable and stylish!" 
+                        data-image="https://placehold.co/350x500"
+                        onclick="goToDetailPage(this)"
+                        >
+                            
+                            <div class="the_che"></div>
+                            <img src="https://placehold.co/350x500" alt="Standard T-Shirt">
+                            <div class="content">
+                                <h2>Standard T-Shirt</h2>
+                                <p class="price">$20.00</p>
+                                <p class="description">A classic MrBeast T-shirt. Comfortable and stylish!</p>
+                                <button class="btn-buy">Add to Cart</button>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="pricing-container">
+                            <div class="pricing-card"
+                            data-name="Standard T-Shirt" 
+                            data-price="$20.00" 
+                            data-description="A classic MrBeast T-shirt. Comfortable and stylish!" 
+                            data-image="https://placehold.co/350x500"
+                            onclick="goToDetailPage(this)"
+                            >
+                                
+                                <div class="the_che"></div>
+                                <img src="https://placehold.co/350x500" alt="Standard T-Shirt">
+                                <div class="content">
+                                    <h2>Standard T-Shirt</h2>
+                                    <p class="price">$20.00</p>
+                                    <p class="description">A classic MrBeast T-shirt. Comfortable and stylish!</p>
+                                    <button class="btn-buy">Add to Cart</button>
+                                </div>
+                            </div>
+                            </div>
+                            
         </div>
 
-        <!-- Category 2 Products -->
-        <div class="product-card category2 hidden">
-            <div class="the-sanpham">
-                <div class="anh-sanpham">
-                    <img src="https://via.placeholder.com/200" alt="Product Image">
-                </div>
-                <div class="thongtin-sanpham">
-                    <h3 class="ten-sanpham">Product Name</h3>
-                    <p class="gia-sanpham">$29.99</p>
-                </div>
-            </div>
-        </div>
-        <div class="product-card category2 hidden">
-            <div class="the-sanpham">
-                <div class="anh-sanpham">
-                    <img src="https://via.placeholder.com/200" alt="Product Image">
-                </div>
-                <div class="thongtin-sanpham">
-                    <h3 class="ten-sanpham">Product Name</h3>
-                    <p class="gia-sanpham">$29.99</p>
-                </div>
-            </div>
-        </div>
-        <div class="product-card category2 hidden">
-            <div class="the-sanpham">
-                <div class="anh-sanpham">
-                    <img src="https://via.placeholder.com/200" alt="Product Image">
-                </div>
-                <div class="thongtin-sanpham">
-                    <h3 class="ten-sanpham">Product Name</h3>
-                    <p class="gia-sanpham">$29.99</p>
-                </div>
-            </div>
-        </div>
-        <div class="product-card category2 hidden">
-            <div class="the-sanpham">
-                <div class="anh-sanpham">
-                    <img src="https://via.placeholder.com/200" alt="Product Image">
-                </div>
-                <div class="thongtin-sanpham">
-                    <h3 class="ten-sanpham">Product Name</h3>
-                    <p class="gia-sanpham">$29.99</p>
-                </div>
-            </div>
-        </div>
+        <div>  <button onclick="scrollToTop()" id="backToTopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button></div>
 
-        <!-- Category 3 Products -->
-        <div class="product-card category3 hidden">
-            <div class="the-sanpham">
-                <div class="anh-sanpham">
-                    <img src="https://via.placeholder.com/200" alt="Product Image">
-                </div>
-                <div class="thongtin-sanpham">
-                    <h3 class="ten-sanpham">Product Name</h3>
-                    <p class="gia-sanpham">$29.99</p>
-                </div>
-            </div>
-        </div>
-        <div class="product-card category3 hidden">
-            <div class="the-sanpham">
-                <div class="anh-sanpham">
-                    <img src="https://via.placeholder.com/200" alt="Product Image">
-                </div>
-                <div class="thongtin-sanpham">
-                    <h3 class="ten-sanpham">Product Name</h3>
-                    <p class="gia-sanpham">$29.99</p>
-                </div>
-            </div>
-        </div>
-        <div class="product-card category3 hidden">
-            <div class="the-sanpham">
-                <div class="anh-sanpham">
-                    <img src="https://via.placeholder.com/200" alt="Product Image">
-                </div>
-                <div class="thongtin-sanpham">
-                    <h3 class="ten-sanpham">Product Name</h3>
-                    <p class="gia-sanpham">$29.99</p>
-                </div>
-            </div>
-        </div>
-        <div class="product-card category3 hidden">
-            <div class="the-sanpham">
-                <div class="anh-sanpham">
-                    <img src="https://via.placeholder.com/200" alt="Product Image">
-                </div>
-                <div class="thongtin-sanpham">
-                    <h3 class="ten-sanpham">Product Name</h3>
-                    <p class="gia-sanpham">$29.9</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="marquee">
-        <div class="marquee-content">
-            <div class="marquee-icon"><img src="pictures/fire_icon.png" height="80px"></div>
-            <div class="marquee-item">SẢN PHẨM HOT</div>
-            <div class="marquee-icon"><img src="pictures/fire_icon.png" height="80px"></div>
-            <div class="marquee-item">SẢN PHẨM HOT</div>
-            
-        </div>
-        <div class="marquee-content">
-            <div class="marquee-icon"><img src="pictures/fire_icon.png" height="80px"></div>
-            <div class="marquee-item">SẢN PHẨM HOT</div>
-            <div class="marquee-icon"><img src="pictures/fire_icon.png" height="80px"></div>
-            <div class="marquee-item">SẢN PHẨM HOT</div>
-            
-        </div>
-        <div class="marquee-content">
-            <div class="marquee-icon"><img src="pictures/fire_icon.png" height="80px"></div>
-            <div class="marquee-item">SẢN PHẨM HOT</div>
-            <div class="marquee-icon"><img src="pictures/fire_icon.png" height="80px"></div>
-            <div class="marquee-item">SẢN PHẨM HOT</div>
-            
-        </div>
-        <div class="marquee-content">
-            <div class="marquee-icon"><img src="pictures/fire_icon.png" height="80px"></div>
-            <div class="marquee-item">SẢN PHẨM HOT</div>
-            <div class="marquee-icon"><img src="pictures/fire_icon.png" height="80px"></div>
-            <div class="marquee-item">SẢN PHẨM HOT</div>
-            
-        </div>
-    </div>
-  
-
-
-    <div>  <button onclick="scrollToTop()" id="backToTopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button></div>
-
-    
-    
-</body>
-</html>
+        
+        
+    </body>
+    </html>

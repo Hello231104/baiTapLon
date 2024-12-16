@@ -23,7 +23,7 @@ body {
     max-width: 98%; 
     overflow: hidden; 
     align-items:center;
-
+    margin-bottom: 1%;
 }
 
 .carousel-images {
