@@ -176,7 +176,7 @@ h2 {
     margin-top:15px;
     min-width: 500px;
     text-align: center;
-    animation: chuyenMau 2s linear infinite;
+    /*animation: chuyenMau 2s linear infinite;*/
     font-weight:bold;
     font-size:60px;
 }
