@@ -4,9 +4,12 @@ function goToDetailPage(card) {
     const price = card.getAttribute('data-price');
     const description = card.getAttribute('data-description');
     const image = card.getAttribute('data-image');
+    const descriptiondetail = card.getAttribute('data-description-detail');
+    const size =card.getAttribute('data-size');
+    const nsx =card.getAttribute('data-nsx');
     
     // Lưu thông tin vào localStorage hoặc sessionStorage
-    const detailData = { name, price, description, image };
+    const detailData = { name, price, description, image, descriptiondetail, size, nsx };
     localStorage.setItem('productDetail', JSON.stringify(detailData));
     
     // Chuyển hướng đến trang chi tiết
