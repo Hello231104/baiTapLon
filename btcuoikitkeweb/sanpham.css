@@ -23,7 +23,7 @@
 }
 
 .pricing-card {
-    max-width: 350px;
+    max-width:350px;
     width: 100%;
     max-height: 500px;
     position: relative;
@@ -166,24 +166,24 @@ h2 {
 
 .marquee-content{
     display: flex;
-    animation: scroll2 8s linear infinite;
+    animation: scroll 10s linear infinite;
 }
 .marquee-content2{
     display: flex;
-    animation: scroll 8s linear infinite;
+    animation: scroll2 8s linear infinite;
 }
 
 .marquee-item{
     background-color: white;
-    margin-top:15px;
-    min-width: 500px;
+    margin-top:0px;
+    max-width: 500px;
     text-align: center;
     /*animation: chuyenMau 2s linear infinite;*/
     font-weight:bold;
     font-size:60px;
 }
 .marquee-icon{
-    margin-top:12px;
+    margin-top:5px;
     height:10px;
     min-width: 70px;
 }
@@ -202,14 +202,15 @@ h2 {
   /*cho may tinh kich thuoc >768 px*/
   @media (min-width: 768px) {
     .pricing-card img {
-        height: 500px; 
+        height: 500px;
     }
 }
 
 /* cho dien thoai kthuoc <768 */
 @media (max-width: 767px) {
     .pricing-card img {
-        height: 200px; 
+        height: 200px;
+        width:150px;
     }
 }
 

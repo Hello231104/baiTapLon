@@ -224,25 +224,6 @@ body {
 }
 
 /*chu chay*/
-.marquee{
-    margin-bottom: 5px;
-    position: relative;
-
-    overflow: hidden;
-    width: 100%;
-    height: 80px;
-    background-color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    border: 1px solid #000;
-}
-
-.marquee-content{
-    display: flex;
-    animation: scroll 10s linear infinite;
-}
-
-
 
 .marquee-item{
     
