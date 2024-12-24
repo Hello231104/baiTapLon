@@ -11,8 +11,6 @@
         display: grid ;
         grid-template-columns: auto auto auto auto;
     }
-    .list div{
-    }
     .pricing-container {
         margin-left: 0.5%;
         margin-right:0.5%;
