@@ -198,14 +198,14 @@ h2 {
     filter: blur(5px); /* Làm ảnh mờ khi hover */
   }
   /*cho may tinh kich thuoc >768 px*/
-  @media (min-width: 768px) {
+  @media (min-width: 1121px) {
     .pricing-card img {
         height: 500px;
     }
 }
 
 /* cho dien thoai kthuoc <768 */
-@media (max-width: 767px) {
+@media (max-width: 1120px) {
     .pricing-card img {
         height: 200px;
         width:150px;
