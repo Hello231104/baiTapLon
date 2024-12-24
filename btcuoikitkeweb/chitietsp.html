@@ -20,6 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Details</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chitietsp.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/antd/4.16.13/antd.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -31,17 +32,23 @@
         <div id="headertrang"></div>
     </header>
    
-    <div class="detail-container">
+<div class="detail-container">
+    <div>
         <img id="product-image" src="" alt="Product Image">
+    </div>
+    <div>
         <h1 id="product-name"></h1>
-        <h2>Giá: </h2>
         <p id="product-price"></p>
         <h2>Chi tiết:</h2>
         <p id="product-description"></p>
         <p id="product-description-detail"></p>
-        <h2>Kích thước: </h2><p id="product-size"></p>
-        <h2>Nhà sản xuất: </h2><p id="product-nsx"></p>
+        <table>
+            <tr><td>Kích thước: </td><td id="product-size"></td></tr>
+            <tr><td>Nhà sản xuất: </td><td id="product-nsx"></td></tr>
+            <tr><td>Phân loại: </td><td id="product-type"></td></tr>
+        </table>
     </div>
+</div>
 
 
     
@@ -60,6 +67,7 @@
             document.getElementById('product-description-detail').textContent=detailData.descriptiondetail;
             document.getElementById('product-size').textContent= detailData.size;
             document.getElementById('product-nsx').textContent= detailData.nsx;
+            document.getElementById('product-type').textContent=detailData.type;
         }
     </script>
 </body>

@@ -7,9 +7,9 @@ function goToDetailPage(card) {
     const descriptiondetail = card.getAttribute('data-description-detail');
     const size =card.getAttribute('data-size');
     const nsx =card.getAttribute('data-nsx');
-    
+    const type=card.getAttribute('data-type');
     // Lưu thông tin vào localStorage hoặc sessionStorage
-    const detailData = { name, price, description, image, descriptiondetail, size, nsx };
+    const detailData = { name, price, description, image, descriptiondetail, size, nsx,type };
     localStorage.setItem('productDetail', JSON.stringify(detailData));
     
     // Chuyển hướng đến trang chi tiết
