@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="chitiet.js"></script>
+
 </head>
 <body>
     <header>
@@ -36,19 +38,30 @@
     <div>
         <img id="product-image" src="" alt="Product Image">
     </div>
-    <div>
+    <div class="second-container">
         <h1 id="product-name"></h1>
-        <p id="product-price"></p>
-        <h2>Chi tiết:</h2>
-        <p id="product-description"></p>
-        <p id="product-description-detail"></p>
+        <h2>Thông tin sản phẩm</h2>
         <table>
-            <tr><td>Kích thước: </td><td id="product-size"></td></tr>
+            <tr><td>Tình trạng: </td><td>Còn hàng</td></tr>
+            <tr><td>Ngày mở bán </td><td>26/12/2024</td></tr>
             <tr><td>Nhà sản xuất: </td><td id="product-nsx"></td></tr>
             <tr><td>Phân loại: </td><td id="product-type"></td></tr>
+            
+            <tr><td>Kích thước: </td><td id="product-size"></td></tr>
         </table>
+        
+        <p id="product-price"></p>
+        <button class="check-branch-btn" onclick="showBranche()">Xem chi nhánh còn hàng</button>
     </div>
 </div>
+    <div class="des-container">
+        <div class="des">
+            
+        <p id="product-description"></p>
+        <h2>Mô tả:</h2>
+        <p id="product-description-detail"></p>
+        </div>
+    </div>
 
 
     

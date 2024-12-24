@@ -15,3 +15,7 @@ function goToDetailPage(card) {
     // Chuyển hướng đến trang chi tiết
     window.location.href = 'chitietsp.html';
 }
+
+function showBranche() {
+    alert("Chi nhánh 209 Đội cấn, Ba Đình, Hà Nội còn hàng!");
+}
