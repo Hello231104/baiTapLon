@@ -153,6 +153,10 @@
     list-style: none;
     }
 
+    footer ul li a{
+        color: black;
+    }
+
     footer .upper-footer{
         
         border:1px solid black;
